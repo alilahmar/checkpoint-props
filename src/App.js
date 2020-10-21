@@ -36,17 +36,12 @@ function App() {
         fullName={WilliamProps.fullName}
         Fontcolor={WilliamProps.Fontcolor}
         biog={WilliamProps.biog}
-        profession={WilliamProps.profession} >
+        profession={WilliamProps.profession}
+        handleName={handleMe(WilliamProps.fullName)}
+        >
         <img src="/source/WILLIAM.jpg" alt="sheks" width='300' height='300' />
       </Introduction>
     </div>
   );
 }
-import { FaBeer } from 'react-icons/fa';
-class Question extends React.Component {
-  render() {
-    return <h3> Lets go for a <FaBeer />? </h3>
-  }
-}
-
 export default App;
